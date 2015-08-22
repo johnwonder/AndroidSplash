@@ -46,7 +46,7 @@ public class MainActivity extends Activity implements View.OnClickListener,ViewP
     }
 
     private void initView(){
-        views = new ArrayList<>();
+        views = new ArrayList<View>();
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
 
@@ -66,7 +66,7 @@ public class MainActivity extends Activity implements View.OnClickListener,ViewP
         viewPager.setAdapter(vpAdapter);
 
         //http://www.bubuko.com/infodetail-990021.html
-        viewPager.addOnPageChangeListener(this);
+        viewPager.setOnPageChangeListener(this);
 
         initPoint();
     }
@@ -115,7 +115,7 @@ public class MainActivity extends Activity implements View.OnClickListener,ViewP
 
     @Override
     public void onClick(View v) {
-        int position = (int) v.getTag();
+        int position =  Integer.parseInt(v.getTag().toString());
         setCurView(position);
         setCurDot(position);
     }

@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Faci.iml" filepath="$PROJECT_DIR$/Faci.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guideview/guideview.iml" filepath="$PROJECT_DIR$/guideview/guideview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mojiguidview/mojiguidview.iml" filepath="$PROJECT_DIR$/mojiguidview/mojiguidview.iml" />
     </modules>
   </component>
 </project>
